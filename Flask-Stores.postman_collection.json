@@ -1,0 +1,518 @@
+{
+	"info": {
+		"_postman_id": "d23b2cd1-ed97-4058-b79b-0b079c554d2b",
+		"name": "Flask-Stores",
+		"description": "displayed various operations of retrieving,adding,updating,deleting and searching operations on the data.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25094247"
+	},
+	"item": [
+		{
+			"name": "Retrieve",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/stores",
+				"description": "retrieves all the data"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/stores",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/stores"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.4 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 15:59:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "297"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1\",\n        \"location\": \"hyd\",\n        \"name\": \"revi\",\n        \"type\": \"ssupermarket\"\n    },\n    {\n        \"id\": \"2\",\n        \"location\": \"hyd\",\n        \"name\": \"revi\",\n        \"type\": \"ssupermarket\"\n    },\n    {\n        \"id\": \"3\",\n        \"location\": \"uppal ring road\",\n        \"name\": \"more\",\n        \"type\": \"super market\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Retrieve using id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/stores/1",
+				"description": "retrieves the data using the id"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/stores/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:5000/stores/1"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.4 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 16:00:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"1\",\n    \"location\": \"hyd\",\n    \"name\": \"revi\",\n    \"type\": \"ssupermarket\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Retrieve using id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/stores/2",
+				"description": "retrieves the data using the id"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/stores/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:5000/stores/2"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.4 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 16:04:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"2\",\n    \"location\": \"hyd\",\n    \"name\": \"revi\",\n    \"type\": \"ssupermarket\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Retrieve using id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/stores/3",
+				"description": "retrieves the data using the id"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/stores/3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:5000/stores/3"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.4 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 16:04:11 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "93"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"3\",\n    \"location\": \"uppal ring road\",\n    \"name\": \"more\",\n    \"type\": \"super market\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add new data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"3\",\r\n    \"location\": \"uppal ring road\",\r\n    \"name\": \"more\",\r\n    \"type\": \"super market\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/stores",
+				"description": "adds new data if id is already present shows error message 400"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/stores",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"3\",\r\n    \"location\": \"uppal ring road\",\r\n    \"name\": \"more\",\r\n    \"type\": \"super market\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/stores"
+					},
+					"status": "BAD REQUEST",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.4 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 16:04:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "\"error id already present give another id\""
+				}
+			]
+		},
+		{
+			"name": "Add new data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4\",\r\n    \"location\": \"Lb nagar\",\r\n    \"name\": \"Reliance\",\r\n    \"type\": \"Electronics\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/stores",
+				"description": "if id is different adds the store succesfully"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/stores",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"4\",\r\n    \"location\": \"Lb nagar\",\r\n    \"name\": \"Reliance\",\r\n    \"type\": \"Electronics\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/stores"
+					},
+					"status": "CREATED",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.4 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 16:04:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Store created successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete using id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4\",\r\n    \"location\": \"uppal ring road\",\r\n    \"name\": \"more\",\r\n    \"type\": \"super market\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/stores/4",
+				"description": "deletes the store of specific id"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/stores/4",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"4\",\r\n    \"location\": \"uppal ring road\",\r\n    \"name\": \"more\",\r\n    \"type\": \"super market\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/stores/4"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.4 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 16:06:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Store deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/stores/search/hyd",
+				"description": "it searches using the keyword foe name ,location and type"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/stores/search/hyd",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:5000/stores/search/hyd"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.4 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 16:06:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "191"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1\",\n        \"location\": \"hyd\",\n        \"name\": \"revi\",\n        \"type\": \"ssupermarket\"\n    },\n    {\n        \"id\": \"2\",\n        \"location\": \"hyd\",\n        \"name\": \"revi\",\n        \"type\": \"ssupermarket\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\": \"3\",\r\n    \"location\": \"uppal metro\",\r\n    \"name\": \"more\",\r\n    \"type\": \"super market\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/stores/3",
+				"description": "Updates the data of specific store using id"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/stores/3",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\": \"3\",\r\n    \"location\": \"uppal metro\",\r\n    \"name\": \"more\",\r\n    \"type\": \"super market\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/stores/3"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.3.4 Python/3.11.3"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jul 2023 16:10:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Store updated successfully\"\n}"
+				}
+			]
+		}
+	]
+}
